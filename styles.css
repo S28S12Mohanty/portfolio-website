@@ -508,6 +508,11 @@ body .bottom-nav .nav-link i {
   gap: 80px;
   margin-bottom: 60px;
   margin-top: 10rem;
+  min-width: 0;
+}
+
+.top-section > * {
+  min-width: 0;
 }
 
 .top-section .hero-content {
