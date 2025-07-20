@@ -1,0 +1,138 @@
+/* Modern Project Section Styles */
+body{
+  height: 20%;
+}
+.project-section-modern {
+  width: 100%;
+  padding: 40px 0 60px 0;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+.project-grid-modern {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.project-card-modern {
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(31,38,135,0.18);
+  padding: 28px 28px 18px 28px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 280px;
+  border: 1.5px solid rgba(255,255,255,0.10);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.project-card-modern:hover {
+  box-shadow: 0 16px 48px rgba(31,38,135,0.25);
+  transform: translateY(-6px) scale(1.00);
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.project-type-badge {
+  background: #b6baff;
+  color: #222;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 12px;
+  padding: 4px 16px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px #667eea30;
+}
+
+.project-year-badge {
+  background: #23263a;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 4px 14px;
+  opacity: 0.85;
+}
+
+.project-card-desc {
+  color: #d1d5db;
+  font-size: 1.01rem;
+  margin-bottom: 18px;
+  line-height: 1.6;
+  min-height: 48px;
+}
+
+.project-card-image-wrapper {
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.project-btn, .source-btn {
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 14px;
+  text-decoration: none;
+  border: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(31,38,135,0.10);
+  cursor: pointer;
+}
+
+.project-btn {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+.project-btn:hover {
+  background: linear-gradient(90deg, #764ba2, #667eea);
+  color: #fff;
+}
+
+.source-btn {
+  background: #23263a;
+  color: #b6baff;
+  border: 1.5px solid #b6baff;
+}
+
+.source-btn:hover {
+  background: #b6baff;
+  color: #23263a;
+}
+
+.project-card-image {
+  width: 100%;
+  max-width: 340px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(31,38,135,0.10);
+  background: #fff;
+}
+
+@media (max-width: 900px) {
+  .project-grid-modern {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .project-section-modern {
+    padding: 24px 0 40px 0;
+  }
+  .project-card-modern {
+    padding: 18px 10px 12px 10px;
+  }
+} 
