@@ -3,56 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience - Portfolio</title>
+    <title>Projects - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Custom Cursor -->
-    <div class="custom-cursor"></div>
-    <div class="cursor-trail"></div>
-    <div class="cursor-trail"></div>
-    <div class="cursor-trail"></div>
-    
     <!-- Glass Bubbles -->
     <div class="glass-bubble"></div>
     <div class="glass-bubble"></div>
     <div class="glass-bubble"></div>
     <div class="glass-bubble"></div>
     <div class="glass-bubble"></div>
-    
+
     <div class="container">
-        <section class="experience-section">
-            <div class="experience-card neumorphism">
-                <h2 class="card-title">Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Senior Developer</h3>
-                            <p class="company">Tech Corp</p>
-                            <p class="period">2022 - Present</p>
-                            <p class="description">Leading development teams and architecting scalable solutions.</p>
-                        </div>
+        <!-- Navigation -->
+        <nav class="navbar bottom-nav">
+            <ul class="nav-menu">
+                <li><a href="index.php" class="nav-link" title="About"><i class="fas fa-user-astronaut"></i></a></li>
+                <li><a href="skills.php" class="nav-link" title="Skill"><i class="fas fa-rocket"></i></a></li>
+                <li><a href="project.html" class="nav-link active" title="Project"><i class="fas fa-cubes"></i></a></li>
+                <li><a href="experience.html" class="nav-link" title="Experience"><i class="fas fa-mountain"></i></a></li>
+                <li><a href="#contact" class="nav-link" title="Contact"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </nav>
+
+        <section class="projects-section">
+            <div class="about-section glassmorphism">
+                <h2 class="card-title">My Projects</h2>
+                <p class="about-text">A selection of projects showcasing my skills and experience.</p>
+                
+                <div class="projects-grid">
+                    <div class="project-card glassmorphism">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-desc">A modern, responsive personal portfolio website built with HTML, CSS, and JavaScript, featuring glassmorphism and neumorphism UI effects.</p>
+                        <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Full Stack Developer</h3>
-                            <p class="company">Startup Inc</p>
-                            <p class="period">2020 - 2022</p>
-                            <p class="description">Built and maintained multiple web applications using modern technologies.</p>
-                        </div>
+                    <div class="project-card glassmorphism">
+                        <h3 class="project-title">Task Manager App</h3>
+                        <p class="project-desc">A full-stack task management application using React, Node.js, and MongoDB, supporting real-time collaboration and notifications.</p>
+                        <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Frontend Developer</h3>
-                            <p class="company">Web Agency</p>
-                            <p class="period">2019 - 2020</p>
-                            <p class="description">Created responsive and interactive user interfaces.</p>
-                        </div>
+                    <div class="project-card glassmorphism">
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p class="project-desc">A scalable e-commerce platform with user authentication, product management, and payment integration, built with MERN stack.</p>
+                        <a href="#" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i> View Project</a>
                     </div>
                 </div>
             </div>
@@ -60,4 +55,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
